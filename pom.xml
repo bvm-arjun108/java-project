@@ -27,7 +27,24 @@
           <target>1.8</target>
         </configuration>
       </plugin>
+
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.3.2</version> <!-- Update the version to the latest available -->
+          <configuration>
+              <failOnMissingWebXml>false</failOnMissingWebXml>
+            </configuration>
+        </plugin>
+        <!-- Other plugins -->
+
+
+
+
     </plugins>
+
+
   </build>
 
 </project>
