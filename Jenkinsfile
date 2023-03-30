@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             environment {
                 // specify the Maven installation to use
-                MVN_HOME = tool 'Maven 3.8.7'
+                MVN_HOME = tool 'maven'
                 PATH = "${MVN_HOME}/bin:${PATH}"
             }
             steps {
@@ -16,7 +16,7 @@ pipeline {
         stage('Test') {
             environment {
                 // specify the Maven installation to use
-                MVN_HOME = tool 'Maven 3.8.7'
+                MVN_HOME = tool 'maven'
                 PATH = "${MVN_HOME}/bin:${PATH}"
             }
             steps {
